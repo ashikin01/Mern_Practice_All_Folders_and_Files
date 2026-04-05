@@ -1,0 +1,86 @@
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+body{
+    margin-top: 0;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+.nav_bar{
+    width: 100%;
+    
+
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; 
+}
+.logo{
+    font-size: 30px;
+    font-weight:bolder;
+}
+.nav_content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 8px;
+}
+
+ul a{
+    text-decoration: none;
+    font-size: larger;
+    color: rgb(204, 121, 20);
+    font-weight: bolder;
+}
+.button{
+    border: 1px solid brown;
+    background-color: brown;
+    border-radius: 10%;
+    padding: 5px;
+    transition: all 1s ease;
+}
+.button:hover{
+    background-color: blue;
+}
+.button a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+.option a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+.option{
+    display: none;
+}
+
+
+@media (max-width:500px){
+    ul{
+        display: none;
+    }
+
+    ul.active{
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+   .option{
+    display: block;
+   }
+
+}

@@ -1,0 +1,16 @@
+.d1,.d2{
+    height: 200px;
+    width: 200px;
+    border: 1px solid red;
+}
+
+.d1{
+    background-color: blue;
+    color: rgb(43, 226, 61);
+}
+
+.d2{
+    background-color: bisque;
+    margin-left: 40px;
+    margin-top: -160px;
+}

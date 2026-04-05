@@ -1,0 +1,10 @@
+.box{
+    height: 300px;
+    background-color: green;
+    border: 2px solid black;
+}
+
+.cntr{
+    background-color: red;
+    min-height: 8000px;
+}

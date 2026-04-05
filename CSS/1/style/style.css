@@ -1,0 +1,34 @@
+body {
+    background-color: red;
+    color: aquamarine;
+    text-align: center;
+}
+
+ div {
+    background-color: black;
+    color:blueviolet;
+    color: azure;
+    margin: 16px;
+
+} 
+
+.team_a {
+ background-color: aquamarine;
+ color: blue;
+}
+
+.team_b{
+    background-color: aliceblue;
+    color: black;
+}
+
+.team_c{
+    background-color: antiquewhite;
+    color: yellowgreen;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#musfiq{
+    background-color: blueviolet;
+    font-size: 60px;
+}

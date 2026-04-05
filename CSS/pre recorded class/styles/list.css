@@ -1,0 +1,14 @@
+.ordered_list_style{
+    list-style-type: lower-greek;
+}
+
+.unordered_list_style{
+    list-style-type: decimal-leading-zero;
+}
+.custom{
+    list-style: none;
+}
+.custom li::before{
+    list-style: none;
+    content: "✅";
+}

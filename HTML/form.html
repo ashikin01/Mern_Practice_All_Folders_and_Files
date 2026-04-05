@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/register" method="post" novalidate autocomplete="off">
+        <fieldset>
+            <legend>SignUP</legend>
+
+            <label for="username">Username: </label>
+            <input type="text" id="username" required>
+
+            <br>
+
+            <label for="email">Email: </label>
+            <input type="email" id="email">
+
+            <br>
+
+            <label for="password">Password </label>
+            <input type="password" id="password">
+
+            <br>
+
+            <label for="gender">Gender:</label>
+            <br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+
+            <br>
+            
+            <label for="interested_in">Interested IN: </label>
+
+            
+            <input type="checkbox" id="cse" name="subscribe" value="cse">
+            <label for="cse">CSE</label>
+            
+            
+            <input type="checkbox" id="eee" name="subscribe" value="eee">
+            <label for="eee">EEE</label>
+            
+        
+            <input type="checkbox" id="civil" name="subscribe" value="civil" >
+            <label for="civil">Civil</label>
+
+            <br>
+
+            <label for="religion">Religion</label>
+            <select id="religion" name="religion">
+                <option value="islam">Islam</option>
+                <option value="pagan">Pagan</option>
+                <option value="pagan">Pagan</option>
+            </select>
+
+            <br>
+
+            <button type="submit"> Register </button>
+
+
+
+
+            
+
+        </fieldset>
+    </form>
+</body>
+</html>

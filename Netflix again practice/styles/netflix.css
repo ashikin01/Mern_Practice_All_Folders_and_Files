@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+
+    --big_font:64px;
+    --mid_font: 20px;
+    --small_font: 16px;
+}
+
+
+
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: black;
+}
+
+.cmn_btn{
+    background-color: red;
+    color: white;
+    padding: 7px 13px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.cmn_btn:hover{
+    background-color: rgb(185, 9, 9);
+    cursor: pointer;
+}
+
+.cmn_btn.get_started{
+    padding: 20px 80px 20px 30px;
+    font-weight: bolder;
+    font-size: 15px;
+      font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: white;
+}
+
+.lan_btn{
+    color: white;
+    padding: 7px 13px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+
+
+/* background image start */
+
+.background_image{
+    position: relative;
+    height: 85vh;
+    width: 100%;
+    background-size: max(100vw,1200px) ;
+   
+    background-image: url(../assets/BD-en-20260302-TRIFECTA-perspective_2b701fd8-dc2a-44b9-81f9-d838df1090b3_large.jpg);
+   
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+/* background image end  */
+
+
+/* dark box start  */
+
+.black{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.2;
+    position: absolute;  
+}
+
+
+/* nav start */
+.container{
+    max-width: 70vw;
+    margin: 0 auto;
+}
+.image img{
+    width: 120px;
+}
+
+.container.nav{
+    height: 7.5vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 0px 0px;
+    position: relative;
+    
+} 
+
+/* nav end  */
+
+/* banner start  */
+
+.container.banner{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    position: relative;
+   
+}
+
+.big_font{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--big_font);
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: white;
+}
+
+.mid_font{
+    color: white;
+    font-size: var(--mid_font);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.mid_font.banner{
+    margin: 20px;
+}
+.small_font{
+    font-size: var(--small_font);
+     font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.banner_input_btn{
+    display: flex;
+    align-items: center;
+    margin-top:15px;
+    display: flex;
+    gap: 20px;
+}
+
+.banner_input_btn input{
+    background-color: transparent;
+    width: 300px;
+    height: 50px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: rgba(33, 27, 27, 0.2);
+}
+
+.banner_input_btn input::-webkit-input-placeholder{
+    font-weight: bolder;
+    color: white;
+  
+}
+/* banner end  */
+
+/* separation start  */
+.separation{
+    width: 100%;
+    height: 10px;
+    background-color: gray;
+}
+/* separation end  */
+
+/* tv section start  */
+
+.tv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.tv > .text{
+
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+
+}
+
+
+
+.tv > .text > :first-child{
+    font-size: var(--big_font);
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.tv > .text > :nth-child(2){
+    font-size: var(--mid_font);
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.tv .media {
+    position: relative;
+}
+
+
+.tv .media video{
+    position: absolute;
+    right: 78px;
+    top: 97px;
+}
+
+.tv2 .media img{
+    width: 600px;
+    position: relative;
+    z-index: 1;
+}
+.tv2 .media video{
+    width: 505px;
+    position: absolute;
+    left: 65px;
+    top: 75px;
+}
+
+.faq{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    gap: 30px;
+}
+
+.faq > div:first-child{
+    color: white;
+    margin-top: 60px;
+    font-size: var(--big_font);
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.faq .questions{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq .questions div{
+    width: 50vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: var(--mid_font);
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    background-color:#2D2D2D ;
+    gap: 50px;
+    padding: 0px 20px;
+    transition: all 1s ease-in-out;
+}
+
+.faq .questions div:hover{
+    cursor: pointer;
+    background-color:#414141 ;
+}
+
+
+.last{
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+ 
+}
+
+.last > div:first-of-type{
+    color: white;
+    font-size: var(--mid_font);
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.last > div:nth-of-type(2){
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.last > div:nth-of-type(2) > a{
+    color: white;
+}
+

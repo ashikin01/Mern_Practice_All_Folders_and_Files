@@ -1,0 +1,17 @@
+
+.image {
+    width: 200px;
+   display: inline-block;
+}
+
+.paragraph{
+    display: inline-block;
+    width: calc(100% - 220px);
+
+}
+
+div{
+    display: inline;
+    width: 100%;
+    vertical-align: top;
+}

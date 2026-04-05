@@ -1,0 +1,170 @@
+
+/* header section start */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    height: 50px;
+     
+}
+
+.header-left a img{
+    
+    max-width: 100px;
+}
+
+.header-list-left{
+    display: flex;
+    gap: 10px;
+}
+.header-list-left li{
+    list-style: none;
+  
+}
+
+.header-list-left li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+
+
+
+.header-left{
+    display: flex;
+    gap: 0px 40px;
+}
+
+.all-course-btn{
+    background-color: #c7c8cc;
+    height: 28px;
+    width: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.common-btn{
+    
+    background-color: yellow;
+    height: 28px;
+    width: 150px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.all-course-btn:hover{
+    background-color:#9fa0a5 ;
+}
+
+.common-btn:hover{
+    background-color: rgb(170, 170, 6);
+}
+
+.menu{
+    display: none;
+}
+
+
+/* header section end  */
+
+/* hero/banner section start  */
+
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+   
+}
+
+.banner img{
+    border-radius: 10px;
+}
+
+.banner button{
+    margin-top: 20px;
+}
+
+.banner .skill{
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+.banner .graduate{
+    margin-top: 20px;
+    font-size: 0.95em;
+}
+
+.banner .red{
+    color: red;
+}
+
+
+/* hero/banner section end  */
+
+/* upcoming start  */
+
+
+.upcoming .upcoming-text{
+    font-size: 1.25rem;
+    font-weight: 700;
+     display: flex;
+    justify-content: center;
+    margin-top: 85px;
+}
+
+/* upcoming end  */
+
+/* category start  */
+.category{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+    
+}
+
+.category div{
+    border: 1px solid green;
+    background-color: #F9F9FA;
+    text-align: center;
+    padding: 5px;
+    
+}
+
+.menu:hover{
+    background-color:#9fa0a5;
+
+}
+
+/* category end  */
+
+/* courses start  */
+
+.courses{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    
+}
+
+.courses img{
+    max-width: 300px;
+}
+
+.courses button{
+    margin-top: 5px;
+}
+/* courses end  */

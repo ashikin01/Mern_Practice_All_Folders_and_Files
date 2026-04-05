@@ -1,0 +1,75 @@
+*, ::after, ::before{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+    display: flex;
+
+}
+
+.card{
+    background-color: white;
+    width: 20vw;
+    height: 61vh;
+    padding-top: 2vh;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.image{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0vh 2vh;  
+    padding-bottom: 3px;
+}
+
+.image img{
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.capsule{
+    padding-left: 10px;
+}
+.capsule span{
+    font-size: 20px;
+    margin: 5px ;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.content h2{
+    font-size: 40px;
+    margin: 0;
+    margin-top: 6px;
+    padding: 0;
+    margin-left: 5px;
+}
+
+.content p{
+    margin: 0;
+    padding: 0;
+    /* margin-top: 6px; */
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.button{
+    text-align: center;
+}
+.button button{
+    background-color: white;
+    border-radius: 5px;
+    height: 30px;
+}
+
+
+
+
+

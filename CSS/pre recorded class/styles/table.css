@@ -1,0 +1,23 @@
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px auto;
+    background-color: bisque;
+}
+
+td{
+    border: 5px solid black;
+    text-align: center;
+    padding: 10px;
+   
+    
+}
+
+.color:nth-child(2n-1){
+    background-color: blueviolet;
+}
+
+
+@media (min-width:50px) {
+    overflow-x: scroll;
+}

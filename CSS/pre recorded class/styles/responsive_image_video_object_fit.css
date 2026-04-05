@@ -1,0 +1,19 @@
+img{
+    max-width: 100%;
+    /* height: auto; */
+    display: block;
+    margin: auto;
+    /* object-fit: cover; */
+}
+
+
+iframe{
+   
+    max-width: 100%; 
+    aspect-ratio: 1/1;
+    /* margin: auto;
+    width: 100%;
+    font-size: 50px; */
+    /* aspect-ratio: 16/16; */
+    /* max-width: 900px;  */
+}

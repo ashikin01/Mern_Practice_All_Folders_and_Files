@@ -1,0 +1,19 @@
+div{
+    background-color: blue;
+    color: rgb(205, 50, 50);
+}
+
+.ashikin{
+  
+    margin-top: 50px;
+
+    background-color: aquamarine;
+    color: rgb(255, 196, 207);
+}
+
+#musfiq{
+    display: inline-block;
+    background-color: transparent;
+    color: blue;
+    margin-top: 70px;
+}

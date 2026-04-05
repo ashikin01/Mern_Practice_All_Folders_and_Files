@@ -1,0 +1,61 @@
+
+body{
+    margin: 30px;
+}
+
+.grand_parent{
+    background: gray;
+    height: 1600px;
+    border: 5px solid green;
+    padding: 25px; 
+
+}
+
+.parent {
+    background: rgb(0, 166, 255);
+   
+    border: 5px solid black;
+
+    display: flex;
+ 
+  
+
+}
+
+.parent > div{  /*It selects only the div elements that are direct children */
+    
+    width: 100px;
+    height: 100px;
+    border: 2px solid yellow;
+   
+   
+}
+
+.child_1{
+
+    background-color: antiquewhite;
+
+}
+.child_2{
+ 
+    background-color: rgba(236, 20, 139);
+    width: 1000px !important; 
+ 
+
+}
+.child_3{
+
+    background-color: green;
+
+}
+.child_4{
+
+    background-color: black;
+
+}
+.child_5{
+
+    background-color: red;
+
+}
+

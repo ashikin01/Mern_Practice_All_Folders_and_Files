@@ -1,0 +1,60 @@
+.btn{
+
+    border: 2px solid red;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    padding: 16px;
+    background-color: green;
+    border-radius: 100px;
+
+}
+
+.btn::before{
+    content: "";
+    background-color: red;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+
+}
+
+.list{
+    list-style: none;
+}
+
+.list li::before{
+    content: "Tick";
+    color: red;
+    margin-right: 7px;
+}
+
+/* pseduclass */
+
+.btn:hover{
+    background-color: yellow;
+
+}
+
+input:focus{
+    background-color: blue;
+}
+
+.list li:first-child{
+    color: rgb(255, 0, 153);;
+}
+
+.list li:last-child{
+    color: rgb(0, 255, 47);
+}
+
+.list li:nth-child(2n+1):not(.no_change){
+    color: rgb(25, 112, 89);
+}
+
+.list li::first-letter{
+    font-size: 48px;
+}
+

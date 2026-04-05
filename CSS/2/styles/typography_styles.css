@@ -1,0 +1,9 @@
+p{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 40px;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    text-decoration: line-through;
+}

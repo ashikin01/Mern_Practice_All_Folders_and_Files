@@ -1,0 +1,20 @@
+.div1{
+    border: 5px solid green;
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+    padding: 50px;
+}
+.div2{
+    border: 5px solid rgb(0, 53, 128);
+    background-color: rgb(200, 0, 255,0.5);
+    opacity: 0.5;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+    padding: 50px ;
+    margin-left: -100px;
+}

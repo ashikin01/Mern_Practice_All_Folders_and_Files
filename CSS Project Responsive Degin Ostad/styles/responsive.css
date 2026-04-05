@@ -1,0 +1,220 @@
+/* for tablet display ipad pro 1024px  */
+
+@media (max-width:1024px) {
+
+    /* header section start  */
+
+.container{
+    max-width:900px;
+    margin:auto;
+}
+
+.header-left{
+    gap:55px
+}
+
+.header-left a img{
+    max-width: 150px;
+}
+
+
+.header-list-left li a{
+    color: black;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.all-course-btn{
+    font-size: large;
+}
+
+.common-btn{
+    font-size: large;
+}
+
+    /* header section end  */
+
+    /* hero section start  */
+
+.banner{
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+.banner-img img{
+    max-width: 450px;
+}
+
+    /* hero secton end  */
+
+
+    /* upcoming section start  */
+.upcoming .upcoming-text{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 70px;
+}
+    /* upcoming section end  */
+
+
+    /* category start  */
+
+.category{
+
+    margin-top: 40px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;  
+}
+
+
+    /* category end  */
+
+    /* courses start  */
+
+.courses{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    
+}
+
+.course-card{
+    flex-basis: 41%;
+    margin:0 3px;
+}
+
+
+
+    /* courses end  */
+
+}
+
+
+
+
+/* for mobile display samsung s20 ultra  */
+
+
+
+@media (max-width:412px) {
+
+    /* header section start  */
+
+.container{
+    max-width:390px;
+    margin: auto;
+}
+
+.header.active{
+    height: 250px;  
+}
+
+.header-list-left li a{
+    display: none;
+    
+}
+
+.header-list-left.active li a{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.header-list-left{
+    
+    flex-direction: column;
+    justify-content: end;
+}
+
+.header-left{
+    gap:40px;
+}
+
+.header-left.active{
+    gap:10px;
+}
+
+
+.header-left a img{
+    max-width: 100px;
+}
+
+
+.all-course-btn{
+    font-size: large;
+}
+
+.common-btn{
+    font-size: large;
+}
+
+.header button{
+    margin:1px;
+}
+
+
+    /* header section end  */
+
+    /* hero section start  */
+
+.banner{
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 20px;
+    font-size: 0.7em;
+}
+
+.banner-img img{
+    max-width: 390px;
+}
+
+    /* hero secton end  */
+
+
+    /* upcoming section start  */
+.upcoming .upcoming-text{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
+    /* upcoming section end  */
+
+    /* category start  */
+
+.category{
+
+    margin-top: 40px;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;  
+    
+}
+
+
+    /* category end  */
+
+    /* courses start  */
+
+.courses{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.menu{
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: medium;
+    color: green;
+    width: 50px;
+    margin-left: 160px !important;
+}
+
+
+    /* courses end  */
+
+}

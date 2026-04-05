@@ -1,0 +1,12 @@
+table{
+    width: 80%;
+    /* border-collapse: collapse; */
+    border-spacing: 5px;
+    background-color: bisque;
+    margin: 20px auto;
+}
+
+
+tr:nth-child(odd):not(.not){
+    background-color: aqua;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation 3</title>
+    <link rel="stylesheet" href="./styles/navigation _menu_3.css">
+</head>
+<body>
+    <div class="nav_bar">
+        <div class="container">
+            <div class="nav_content">
+
+                <div class="logo">LOGO</div>
+                <ul class="list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="button"><a href="#login">Login</a></div>
+
+                <div class="option"><a href="#option">☰</a></div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let ul = document.querySelector('ul') ;
+        let option = document.querySelector('.option');
+
+        option.addEventListener('click', () => {
+    ul.classList.toggle('active');
+});
+
+    </script>
+    
+</body>
+</html>

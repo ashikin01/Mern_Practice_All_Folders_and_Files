@@ -1,0 +1,11 @@
+img{
+    float: right;
+    margin-right: 0px;
+    width: 400px;
+}
+div{
+    float: left;
+}
+p{
+    clear: right;
+}

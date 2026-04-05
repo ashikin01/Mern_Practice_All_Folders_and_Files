@@ -1,0 +1,31 @@
+@media (max-width:413px){
+    .menu{
+        display: block;
+    }
+    .container{
+        max-width: 370px;
+    }
+    .header_list{
+        display: none;
+    }
+    .header_list.active{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 6vh;
+        left: 60vw;
+        gap: 0px;
+
+    }
+
+    .banner_right img{
+        margin-top: 150px;
+    max-width: 120px;
+
+    }
+
+    .header_right{
+        gap: 5px;
+    }
+}
+

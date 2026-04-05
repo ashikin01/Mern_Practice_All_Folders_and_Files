@@ -1,0 +1,57 @@
+
+*,*::before,*::after {
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+}
+form{
+    width: 350px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 50px auto;
+    box-shadow:  10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+label{
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-top: 10px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 3px solid #ccc;
+    font-size: 14px;
+    border-radius: 10px
+}
+
+input:focus{
+    border-color: rgb(0, 255, 102);
+    box-shadow:  10px 10px 5px 0px rgba(0,0,0,0.75);
+    outline: none;
+}
+
+button{
+    width: 100%;
+    background-color: blue;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+   
+}
+
+button:hover{
+    background-color: red;
+}
+
+::-webkit-input-placeholder{
+    color: red;
+    font-style: italic;
+}

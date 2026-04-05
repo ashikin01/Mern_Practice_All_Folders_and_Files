@@ -1,0 +1,44 @@
+.d1,.d2{
+    height: 200px;
+    width: 200px;
+    border: 1px solid red;
+}
+
+.d1{
+    background-color: blue;
+    color: rgb(43, 226, 61);
+}
+
+.d2{
+    background-color: bisque;
+    margin-left: 40px;
+    margin-top: -160px;
+}
+
+/* important mark > inline stylus > id selector>class selector>tag selector */
+
+
+/*tag selector */
+p{
+    background-color: brown ;
+}
+
+/*class selector*/
+
+.class_para{
+    color: aqua;
+    padding: 16px;
+}
+
+.class_para{
+    background-color: black;
+
+}
+
+/* id selector  */
+
+#id_para{
+    color: aqua;
+    background-color: blueviolet;
+
+} 
