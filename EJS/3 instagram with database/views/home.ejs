@@ -1,0 +1,19 @@
+<%- include("include/header.ejs") %>
+<body>
+    <h1>THis is Instagram</h1>
+    <h2>Welcome <%= data2.name %> </h2>
+    <button>follow</button>
+    <button>message</button>
+    <p>Followers: <%= data2.followers%> &nbsp; &nbsp; &nbsp; &nbsp;  Following: <%=data2.following%></p>
+    <hr/>
+    <h2>Posts</h2>
+    <% for(posts of data2.posts){ %>
+        <img src="<%=posts.image%>" alt="">
+        <p>likes: <%= posts.likes %></p>
+        <p>comments: <%= posts.comments %></p>
+    <% } %>
+
+    <%- include("include/footer.ejs")%>
+
+</body>
+</html>
