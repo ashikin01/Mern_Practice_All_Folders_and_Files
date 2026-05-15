@@ -17,16 +17,19 @@ app.listen(port,()=>{
 let posts=[
     {
         username:"Asheke",
-        post:"We all love Prophet Mohammad (pbuh)"
+        post:"We all love Prophet Mohammad (pbuh)",
+        id:"1a"
     },
     {
         username:"Nafi",
-        post:"We all love cats"
+        post:"We all love cats",
+        id:"2a"
     },
     {
         username:"Shimu",
-        post:"We are human"
-    },
+        post:"We are human",
+        id:"3a"
+    }
 ]
 
 app.get("/posts",(req,res)=>{
@@ -37,7 +40,20 @@ app.get("/posts/new",(req,res)=>{
 })
 
 app.post("/posts",(req,res)=>{
-    res.redirect("/posts");
+    
     let {username,post}=req.body;
     posts.push({username,post});
+    res.redirect("/posts");
+})
+
+app.get("/post/:id",(req,res)=>{
+    let {id}=req.params;
+    let post=posts.find((post)=>id===post.id);
+    console.log(post);
+    if(post){
+    res.render("show.ejs",{post});
+    }
+    else{
+        res.render("error_post.ejs")
+    }
 })

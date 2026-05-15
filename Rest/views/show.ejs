@@ -3,21 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Individiual post</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <H1>Welcome to Quora</H1>
-        <% for(post of posts){ %>
+    <H1>Post id is: <%= post.id %> </H1>
+        
         <div>
             <h4><%= post.username %></h4>
         <h3><%= post.post %></h3>
         </div>
-        <a href="http://localhost:8080/post/<%=post.id%>">See Details</a>
         
-        <% } %>
-        <br>-
-    <a href="http://localhost:8080/posts/new">Create a new post</a>
+      
 
 </body>
 </html>
