@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <H1>Welcome to Quora</H1>
+
+    <H1>Welcome to Quora <a href="http://localhost:8080/posts/new">Click to create new post</a></H1>
         <% for(post of posts){ %>
         <div>
             <h4><%= post.username %></h4>
         <h3><%= post.post %></h3>
         </div>
-        <a href="http://localhost:8080/post/<%=post.id%>">See Details</a>
+        <a href="http://localhost:8080/posts/<%=post.id%>">See Details</a>
+        <a href="http://localhost:8080/posts/<%=post.id%>/edit">Edit post</a>
         
         <% } %>
         <br>-

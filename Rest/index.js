@@ -1,5 +1,8 @@
 import express from 'express';
 import path from 'path';
+import { v4 as uuidv4 } from "uuid";
+import methodOverride from "method-override";
+
 
 const port = 8080;
 const app=express();
@@ -9,6 +12,7 @@ app.set("views",path.join(import.meta.dirname, "/views"));
 app.use(express.static(path.join(import.meta.dirname,"/public"))); 
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
+app.use(methodOverride('_method'))
 
 app.listen(port,()=>{ 
     console.log("Port is listening");
@@ -40,13 +44,13 @@ app.get("/posts/new",(req,res)=>{
 })
 
 app.post("/posts",(req,res)=>{
-    
+    let id=uuidv4();
     let {username,post}=req.body;
-    posts.push({username,post});
+    posts.push({username,post,id});
     res.redirect("/posts");
 })
 
-app.get("/post/:id",(req,res)=>{
+app.get("/posts/:id",(req,res)=>{
     let {id}=req.params;
     let post=posts.find((post)=>id===post.id);
     console.log(post);
@@ -56,4 +60,21 @@ app.get("/post/:id",(req,res)=>{
     else{
         res.render("error_post.ejs")
     }
+})
+
+app.get("/posts/:id/edit",(req,res)=>{
+    let {id}=req.params;
+    let post=posts.find((p)=>id==p.id);
+    res.render("edit.ejs",{post});
+    
+})
+
+app.patch("/posts/:id",(req,res)=>{
+    let {id}=req.params;
+    let oldPostObj=posts.find((p)=>id==p.id);
+    
+    let {post}=req.body;
+    oldPostObj.post=post;
+    res.redirect("/posts")
+    
 })
