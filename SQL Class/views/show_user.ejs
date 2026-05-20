@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Your Userdata are below</h1>
+    <h3><a href="http://localhost:8080/user/new">Add new user</a></h3>
+    
+<table border="1">
+        <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Edit</td>
+        <td>Delete</td>
+    </tr>
+    <%for(user of users){ %>
+        
+    <tr>
+        <td><%=user.id %></td>
+        <td><%=user.name %></td>
+        <td><%=user.email %></td>
+        <td>
+        <form method="get" action="/user/<%=user.id %>/edit" >
+             <button>Edit</button>
+        </form>
+        </td>
+        <td>
+        <form method="post" action="/user/delete?_method=DELETE" >
+             <input type="hidden" name="id" value="<%=user.id %>">
+             <button>Delete</button>
+        </form>
+        </td>
+        
+    </tr>
+    
+        
+        
+    <%}%>
+    </table>
+     
+</body>
+</html>
